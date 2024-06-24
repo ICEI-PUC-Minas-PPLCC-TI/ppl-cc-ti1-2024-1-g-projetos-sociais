@@ -153,7 +153,8 @@ header a{
 }
 #div-avaliacao{
     margin: 0;
-   
+    max-width: 500px;
+
 }
 #avaliacao label{
     display: block;
@@ -164,4 +165,9 @@ header a{
 }
 #avaliacao > span{
     display: none;
+}
+#btnEditarNota{
+    font-size: 0.8rem;
+    margin-left: 10px;
+    border: 1px solid gray;
 }
