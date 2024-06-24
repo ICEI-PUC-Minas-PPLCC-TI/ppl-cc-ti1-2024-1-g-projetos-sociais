@@ -9,7 +9,7 @@
       "localizacao": "Centro de Convenções ABC",
       "horario": "09:00 - 18:00",
       "data": "2024-06-25",
-      "notas": []
+      "notas": [ ]
     },
     {
       "id": "2",
@@ -91,7 +91,10 @@
         6,
         7
       ],
-      "id_projetos_favoritados": []
+      "id_projetos_favoritados": [
+        1,
+        2
+      ]
     }
   ],
   "anfitrioes": [
