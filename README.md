@@ -4,7 +4,6 @@ A dor que buscamos resolver é a desconexão entre voluntários e projetos socia
 
 ## Alunos integrantes da equipe
 
-* Fernando Valle Gusmão
 * João Victor de Almeida Maia
 * Sofia Grossi Vieira Santos
 * Matheus Akl Barbalho Falqueto
