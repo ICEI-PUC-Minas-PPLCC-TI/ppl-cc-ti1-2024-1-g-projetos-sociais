@@ -1,35 +1,33 @@
 <<<<<<< HEAD
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: Conexão Solidária Belo Horizonte (CSBH).
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Grossi Vieira Santos
+    given-names: Sofia
+  - family-names: de Almeida Maia
+    given-names: João Victor
+  - family-names: Pereira de Mesquita Faria
+    given-names: Filipi
+  - family-names: Akl Barbalho Falqueto
+    given-names: Matheus
+  - family-names: Moraes Martini
+    given-names: Enzo
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Vieira Carneiro
+    given-names: Rommel
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Simões Silva
+    given-names: Tamara
 keywords:
-  - 
-  - 
-repository-code: 
+  - Projetos Sociais
+  - Voluntários
+repository-code: https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20241-1-projetos-sociais
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
+date-released: 2024-06-30
 =======
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
