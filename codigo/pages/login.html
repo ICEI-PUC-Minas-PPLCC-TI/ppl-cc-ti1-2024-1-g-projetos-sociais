@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+
+    
+</head>
+<body>
+  <header>
+    <nav class="header">
+        <a href="#" id="logoMobile"><img id="logo" src="assets/images/Conexão Solidária Logo-3.png" width="200px"></a>
+        <div id="secoesMenu">
+        <input type="checkbox" id="menuTuggle">
+        <label for="menuTuggle" class="menu-icon">
+           <i class="fa-solid fa-bars"></i>
+           <i class="fa-solid fa-circle-xmark"></i>
+        </label>
+        <ul class="menu">
+            <li class="mItem" id="m1"><a href="#">Central de Ajuda</a></li>
+            <li class="mItem" id="m2"><a href="#">Torne-se um Anfitrião</a></li>
+            <li class="mItem" id="m3"><a href="#"><img src="assets/images/Conexão Solidária Logo-3.png" width="150px"></a></li>
+            <li class="mItem" id="m4"><a href="#">Entrar</a></li>
+            <li class="mItem" id="m5"><a href="#">Cadastre-se</a></li>
+            <li class="mItem" id="m6"><a href="#">Vagas de Voluntariado</a></li>
+            <li class="mItem" id="m7"><a href="#">Doação de Materiais</a></li>
+            <li class="mItem" id="m8"><a href="#">Contribuição Financeira</a></li>
+            <li class="bar"></li>
+        </ul>
+        </div>
+    </nav>
+</header>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Login</h1>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite seu e-mail" />
+            <a href="/">Esqueci minha senha</a>
+            <input type="submit" value="Acessar" class="btn" />
+        </form>
+    </div>
+    <script src="../assets/js/login.js"></script>
+</body>
+</html>
