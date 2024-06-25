@@ -1,49 +1,43 @@
-import { create, router as _router, defaults } from 'json-server'
-const server = create()
-const router = _router('./db/db.json')
-
-// Para permitir que os dados sejam alterados, altere a linha abaixo
-// colocando o atributo readOnly como false.
-const middlewares = defaults()
-
-server.use(middlewares)
-server.use(router)
-server.listen(3000, () => {
-  console.log('JSON Server está em execução!')
-})
-const urlDuvida = '/question'
-let cidades = []
-
-function carregaDadosJSONServer (func) {
-    fetch(urlDuvida)
-        .then (function (response) { return response.json() })
-        .then (function (dados) {
-            cidades = dados
-            console.log ('Dados carregados!')
-            func ()
-        })
+async function obterDuvidas() {
+    try {
+        const response = await fetch('http://localhost:3000/duvidas');
+        const duvidas = await response.json();
+        return duvidas;
+    } catch (error) {
+        console.error('Erro ao obter as duvidas:', error);
+        return [];
+    }
 }
-function carregaDadosJSONServer(func) {
-    fetch(urlDuvidas)
-        .then(function (response) { return response.json() })
-        .then(function (dados) {
-            cidades = dados
-            console.log('Dados carregados!')
-            func()
-        })
-}
-function carregaDados() {
-    let ulDuvidas = document.getElementById('ulDuvidas');
-    strTextoHTML = '';
 
-    for (let i = 0; i < question.length; i++) {
-        let question = question[i];
-        strTextoHTML += `<li>
-                                    <a href="exibequestao.html?id=${question.id}">
-                                        ${question.titulo} - ${question.texto} - ${question.duvida - relacionada}</a>
-                                </li>`
+async function preencherTemplate() {
+    const duvidas = await obterDuvidas();
+    const questionCards = document.getElementById('cards');
+    if (!questionCards) {
+        console.error('Elemento com ID "cards" não encontrado');
+        return;
     }
 
-    ul.innerHTML = strTextoHTML;
+    const template = document.getElementById('template');
+    if (!template) {
+        console.error('Template com ID "template" não encontrado');
+        return;
+    }
+
+    duvidas.forEach(duvida => {
+        const clone = template.content.cloneNode(true);
+        const cardTitle = clone.querySelector('.card-title');
+        const cardText = clone.querySelector('.card-text');
+
+        if (cardTitle && cardText) {
+            cardTitle.textContent = duvida.titulo;
+            cardText.textContent = duvida.texto;
+            questionCards.appendChild(clone);
+        } else {
+            console.error('Erro ao preencher o template: elementos card-title ou card-text não encontrados');
+        }
+    });
 }
-carregaDadosJSONServer(carregaDados);
+
+document.addEventListener('DOMContentLoaded', () => {
+    preencherTemplate();
+});

@@ -33,55 +33,28 @@
         </header>
     
         <main>
+          <template id="template">
+            <div id ="class">
+              <div  class="card">
+                <div class="card-header">
+                    <h5 class="card-title"></h5>
+                </div>
+                <div class="card-body">
+                  <p class="card-text"></p> 
+                </div>
+              </div>
+            </div>
+          </template>
             <div><h1>Dúvidas Frequentes</h1></div>
             <div class="search-wrapper">
                 <label for="search">Pesquisar dúvidas</label>
-                <input type="search" id="search" data-search>
+                <input type="search" id="search">
             </div>
-            <div class="search-card" data-question-card-container></div>
-            <div class="question-cards">
-              <div id="card_1" class="card">
-                <div class="card-header">
-                    <h5 class="card-title"></h5><a href="exibequestao.html?id=1">Como acompanhar as minhas doações?</h5>
-                </div>
-                <div class="card-body">
-                  <p class="card-text"><a href="exibequestao.html?id=1"> Para ver suas doações, você deve primeiramente logar em sua conta e clicar em contribuição financeira. Lá você pode acompanhar as suas doações já feitas e realizar outras doações, pesquisando através da barra de pesquisa ou filtros.</a></p>
-                  <h6 class="card-subtitle mb-2 text-muted">dúvidas relacionadas</h6>
-                  <a href="#card_2" class="card-link">Como fazer uma doação de materiais/alimentos?</a><br> 
-                  <a href="#card_3" class="card-link">Como entrar em um projeto como voluntariado?</a>
-                </div>
-              </div>
-              <div id="card_2" class="card">
-                <div class="card-header">
-                    <h5 class="card-title">Como fazer uma doação de materiais/alimentos?</h5>
-                </div>
-                <div class="card-body">
-                  <p class="card-text"><a href="exibequestao.html?id=2">Para realizar uma contribuição de materiais ou alimentos, você deve primeiramente logar em sua conta e clicar em doação de materiais. Lá você pode acompanhar as suas doações já feitas e realizar outras doações, pesquisando através da barra de pesquisa ou filtros.</a></p>
-                  <h6 class="card-subtitle mb-2 text-muted">dúvidas relacionadas</h6>
-                  <a href="#card_1" class="card-link">Como acompanhar as minhas doações?</a><br> 
-                  <a href="#card_3" class="card-link">Como entrar em um projeto como voluntariado?</a>
-                </div>
-              </div>
-              <div id="card_3" class="card">
-                <div class="card-header">
-                    <h5 class="card-title">Como entrar em um projeto como voluntariado?</h5>
-                </div>
-                <div class="card-body">
-                  <p class="card-text"><a href="exibequestao.html?id=3">Para ver suas doações, você deve primeiramente logar em sua conta e clicar em vagas de voluntariado. Lá você pode se candidatar a novos projetos ou acompanhar os projetos qu já participou, pesquisando através da barra de pesquisa ou filtros. Você também pode avaliar sua experiência nos projetos que participou.</a></p>
-                  <h6 class="card-subtitle mb-2 text-muted">dúvidas relacionadas</h6>
-                  <a href="#card_1" class="card-link">Como acompanhar as minhas doações?</a><br>                 
-                  <a href="#card_2" class="card-link">Como fazer uma doação de materiais/alimentos?</a>
-                </div>
-              </div>
+            <div class="search-card"></div>
+            <div id="cards">
+              
             </div>
-            <template data-question-template>
-                <div class="card-header" data-header>
-                    <h5 class="card-title"></h5>
-                </div>
-                <div class="card-body" data-body>
-                    <p class="card-text"></p>
-                  </div>
-              </template>
+            
         </main>
         
         <footer>
