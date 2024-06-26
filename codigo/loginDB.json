@@ -1,6 +1,22 @@
 {
   "usuarios": [
-    { "id": 1, "email": "usuario1@email.com", "senha": "senha1" },
-    { "id": 2, "email": "usuario2@email.com", "senha": "senha2" }
+    {
+      "id": "1",
+      "nome": "João Victor",
+      "email": "usuario1@email.com",
+      "senha": "senha1"
+    },
+    {
+      "id": "2",
+      "nome": "fdavsdvsd",
+      "email": "usuario2@email.com",
+      "senha": "senha2"
+    },
+    {
+      "id": "8afe",
+      "nome": "joao",
+      "email": "xxx@gmail.com",
+      "senha": "senha3"
+    }
   ]
 }
