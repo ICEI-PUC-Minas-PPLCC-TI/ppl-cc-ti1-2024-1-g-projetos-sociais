@@ -16,8 +16,8 @@ formLogin.addEventListener('submit', async (event) => {
         if (usuario) {
             // Login bem-sucedido: armazene o ID do usuário (ou outras informações)
             // em localStorage ou sessionStorage e redirecione para index-logado.html
-            localStorage.setItem('usuarioLogado', usuario.id);
-            window.location.href = 'index-logado.html';
+            localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
+            window.location.href = 'index.html';
         } else {
             alert('Credenciais inválidas');
         }

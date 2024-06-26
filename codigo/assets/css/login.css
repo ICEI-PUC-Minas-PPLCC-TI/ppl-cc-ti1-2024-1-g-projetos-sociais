@@ -7,7 +7,15 @@ body {
     color: #023047
 }
 
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
 .page {
+    margin-top: 180px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,8 +88,8 @@ body {
 }
 
 .btn {
-    background-color: #525252;
-    color: #fff;
+    background-color: #525252 !important; 
+    color: #fff !important;
     font-size: 14px;
     font-weight: 600;
     border: none !important;
@@ -93,6 +101,6 @@ body {
 
 .btn:hover {
     transform: scale(1.05);
-    background-color: #2a2a2a;
+    background-color: #2a2a2a !important;
 
 }

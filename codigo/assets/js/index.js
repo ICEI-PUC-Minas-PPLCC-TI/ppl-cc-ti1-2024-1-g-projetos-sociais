@@ -23,10 +23,18 @@ function maisInformacoes() {
     cadastrem-os no site para que consigam encontrar voluntários para realizarem tais projetos mais facilmente.
     <div id="banner">
       <p>Ainda não se cadastrou?</p>
-      <div class="btn"><a href="#">Cadastre-se</a></div>
+      <div class="btn"><a href="registro.html">Cadastre-se</a></div>
     </div>
     <button class="btn" id="btnLM">Ler Menos</button>
   `;
+
+  const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+  if(usuarioLogado){
+    document.getElementById('banner').style.display = "none";
+  }
+  else{
+    document.getElementById('banner').style.display = "block";
+  }
   
   document.getElementById('btnLM').addEventListener('click', menosInformacoes);
 }
