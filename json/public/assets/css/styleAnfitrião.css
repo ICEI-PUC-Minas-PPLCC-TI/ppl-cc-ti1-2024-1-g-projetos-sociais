@@ -85,7 +85,9 @@ section a{
     font-size: 3rem;
     color: yellow;
 }   
-
+#remover{
+    grid-column: 2;
+}
 @media screen and (max-width: 1195px){
 
     main{

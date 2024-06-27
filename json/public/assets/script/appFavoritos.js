@@ -31,7 +31,7 @@ async function preencherProjetosNoHTML() {
 
     // Para cada projeto, criar e adicionar um elemento HTML com suas informações
     projetos.forEach(projeto => {
-        const cardTemplate = document.getElementById('card_template');
+        const cardTemplate = document.getElementById('card-template');
         const cardClone = cardTemplate.content.cloneNode(true);
 
         cardClone.querySelector('.anfitriao').textContent = projeto.nome_anfitriao;

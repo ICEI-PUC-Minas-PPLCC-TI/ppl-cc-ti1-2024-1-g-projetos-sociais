@@ -17,25 +17,11 @@
 
 <body>
 
-    <header>
-        <nav class="header">
-            <ul class="menu">
-                <li class="mItem" id="m1"><a href="#">Central de Ajuda</a></li>
-                <li class="mItem" id="m2"><a href="#">Torne-se um Anfitrião</a></li>
-                <li class="mItem" id="m3"><a href="#"><img src="assets/imagens/Conexão Solidária Logo-3.png"
-                            width="150px"></a></li>
-                <li class="mItem" id="m4"><a href="#"><button>Entrar</button></a></li>
-                <li class="mItem" id="m5"><a href="#"><button>Cadastre-se</button></a></li>
-                <li class="mItem" id="m6"><a href="#">Vagas de Voluntariado</a></li>
-                <li class="mItem" id="m7"><a href="#">Doação de Materiais</a></li>
-                <li class="mItem" id="m8"><a href="#">Contribuição Financeira</a></li>
-                <li class="bar"></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="cabecalho"></header>
 
     <main>
-        <template id="card_template">
+        <h1 id="titulo-pagina" class="fs-3 text-body-secondary fw-semibold">Projetos favoritados por você:</h1>
+        <template id="card-template">
             <div id="projeto">
                 <a href="#" id="link" class="card-link">
                     <div class="card">
@@ -56,15 +42,9 @@
                 </div>
             </div>
         </template> 
-        
+        <section id="view" class="cards">
             
-            
-        
-
-        <h1 id="titulo-pagina" class="fs-3 text-body-secondary fw-semibold">Projetos favoritados por você:</h1>
-        <div id="view">
-        </div>
-
+        </section>
 
     </main>
 

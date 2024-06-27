@@ -31,7 +31,9 @@
       "localizacao": "Galeria de Arte ABC",
       "horario": "11:00 - 19:00",
       "data": "2024-08-05",
-      "notas": []
+      "notas": [
+        5
+      ]
     },
     {
       "id": "4",
