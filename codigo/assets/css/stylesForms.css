@@ -17,21 +17,24 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f3f1f1;
+    border-radius: 4px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
 }
 
 h1 {
     margin-bottom: 20px;
     text-align: center;
-    color: #6c63ff;
+    font-weight: 500;
+    font-size: 2em;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    
 }
 
 .input-box {
@@ -42,6 +45,7 @@ h1 {
     font-size: 1rem;
     font-weight: 500;
     color: #333;
+    font-weight: bold;
 }
 
 .input-box input[type="text"],
@@ -49,9 +53,10 @@ h1 {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 1rem;
-    margin-top: 5px;
+    margin-top: 10px;
+
 }
 
 .input-box textarea {
@@ -63,19 +68,19 @@ h1 {
     width: 100%;
     padding: 8px 0;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 1rem;
     margin-top: 5px;
-    background: transparent; /* Removendo a linha ao redor do campo de arquivo */
+    background: transparent;
 }
 
 .button {
-    width: 18%;
+    width: 25%;
     margin: 0 auto; 
     padding: 10px;
     border: none;
-    border-radius: 8px;
-    background-color: #6c63ff;
+    border-radius: 4px;
+    background-color: #525252;
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -84,5 +89,5 @@ h1 {
 }
 
 .button:hover {
-    background-color: #5b52d1;
+    background-color: #2a2a2a;
 }
