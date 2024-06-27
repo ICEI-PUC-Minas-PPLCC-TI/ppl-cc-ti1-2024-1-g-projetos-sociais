@@ -9,7 +9,9 @@
       "localizacao": "Centro de Convenções ABC",
       "horario": "09:00 - 18:00",
       "data": "2024-06-25",
-      "notas": []
+      "notas": [
+        5
+      ]
     },
     {
       "id": "2",
@@ -31,9 +33,7 @@
       "localizacao": "Galeria de Arte ABC",
       "horario": "11:00 - 19:00",
       "data": "2024-08-05",
-      "notas": [
-        5
-      ]
+      "notas": []
     },
     {
       "id": "4",
