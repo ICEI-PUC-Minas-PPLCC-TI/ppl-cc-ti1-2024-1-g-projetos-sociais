@@ -17,6 +17,12 @@
       "nome": "joao",
       "email": "xxx@gmail.com",
       "senha": "senha3"
+    },
+    {
+      "id": "4b26",
+      "nome": "Sofia Grossi",
+      "email": "sofiagrossi.gvs@gmail.com",
+      "senha": "1234"
     }
   ],
   "duvidas": [
@@ -24,7 +30,7 @@
       "id": "1",
       "titulo": "Como achar projetos que se alinham com minhas disponibilidades?",
       "texto": "Clique nos botões do menu de \"Vagas de voluntariado\", \"Doação de Material\" ou \"Contribuição Financeira\" (dependendo do tipo de projeto procurado) e utilize a barra de busca e os filtros para selecionar apenas os projetos que se encaixam em suas disponibilidades.",
-      "ajudou": 0,
+      "ajudou": 1,
       "naoAjudou": 0
     },
     {
@@ -32,14 +38,14 @@
       "titulo": "Como visualizar meus projetos favoritos?",
       "texto": "Para visualizar seus favoritos, primeiramente você deve fazer login em sua conta (ou se cadastrar, caso não tenha uma), depois clicar no ícone do seu perfil no menu principal, o que fará com que um submenu apareça e, nele, você deve clicar no botão \"Favoritos\".",
       "ajudou": 0,
-      "naoAjudou": 0
+      "naoAjudou": 1
     },
     {
       "id": "3",
       "titulo": "Como visualizar os projetos em que participei?",
       "texto": "Para visualizar os projetos em que você participou, primeiramente você deve fazer login em sua conta (ou se cadastrar, caso não tenha uma), depois clicar no ícone do seu perfil no menu principal, o que fará com que um submenu apareça e, nele, você deve clicar no botão \"Meus Projetos\".",
       "ajudou": 0,
-      "naoAjudou": 0
+      "naoAjudou": 1
     },
     {
       "id": "4",
@@ -70,7 +76,7 @@
       "naoAjudou": 0
     }
   ],
-  "contsugerido": [
+  "imagensApresentacao": [
     {
       "id": "1",
       "urlImagem": "assets/imagens/v1.jpg"
