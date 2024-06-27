@@ -1,22 +1,12 @@
 #titulo-pagina{
     padding: 30px;
 }
-main{
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    column-gap: 40px;
-    
-}
-.cards{
-    grid-column: 2;
-}
-
 /*CSS main*/
 
 #projeto{
     display: grid;
     grid-template-columns: 8fr 4fr;
-    column-gap: 40px;
+    column-gap: 100px;
     margin-bottom: 20px;
     align-items: center;
 }
@@ -83,14 +73,14 @@ section a{
     display: block;
 }
 #avaliacao{
-    padding: 10px 60px;
+    padding: 10px 40px ;
     max-width: 500px;
 }
 #avaliacao > span{
     display: none;
 }
 #btnEditarNota{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin-left: 10px;
     border: 1px solid gray;
 }

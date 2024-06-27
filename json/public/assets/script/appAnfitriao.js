@@ -67,23 +67,23 @@ async function preencherProjetosNoHTML() {
         const projetos = await obterProjetosDoAnfitriao(anfitriaoId);
 
         // Selecionar o elemento onde os projetos serão inseridos
-        const view1 = document.getElementById('conteiner');
+        const view1 = document.getElementById('cards');
 
         // Limpar o conteúdo atual, se houver
         view1.innerHTML = '';
 
         // Para cada projeto, criar e adicionar um elemento HTML com suas informações
         projetos.forEach(projeto => {
-            const cardTemplate = document.getElementById('card');
+            const cardTemplate = document.getElementById('card-template');
             if (!cardTemplate) {
                 console.error('Elemento de template de card não encontrado.');
                 return;
             }
             const cardClone = cardTemplate.content.cloneNode(true);
 
-            cardClone.querySelector('.card-subtitle').textContent = projeto.nome_anfitriao;
-            cardClone.querySelector('.card-title').textContent = projeto.nome_projeto;
-            cardClone.querySelector('.tema').textContent = projeto.tema;
+            cardClone.querySelector('.anfitriao').textContent = projeto.nome_anfitriao;
+            cardClone.querySelector('.projtitulo').textContent = projeto.nome_projeto;
+            cardClone.querySelector('.temas').textContent = projeto.tema;
             cardClone.querySelector('.resumo').textContent = projeto.resumo;
 
             view1.appendChild(cardClone);

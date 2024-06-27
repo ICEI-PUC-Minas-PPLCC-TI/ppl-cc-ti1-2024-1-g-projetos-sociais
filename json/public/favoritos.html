@@ -35,33 +35,34 @@
     </header>
 
     <main>
-        <template id="card">
-            <div class="card mb-3 border-secondary border-2" style="max-width: 800px;">
-                <div class="row g-0">
-                    <div id="thumbnail" class="col-md-3 ">
-                        <img src="assets/imagens/Pessoa1.jpg" class="img-fluid">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body">
-                            <h2 class="card-subtitle text-body-secondary fs-6 fw-bold"></h2>
-                            <h1 class="card-title fs-4 fw-bold"></h1>
-                            <p class="card-text"><small class="fw-bold text-body-secondary">Tema: </small><small class="text-body-secondary tema"></small></p>
-                            <p class="card-text"><small class="fw-bold text-body-secondary">Resumo: </small><small class="text-body-secondary resumo"></small></p>
+        <template id="card_template">
+            <div id="projeto">
+                <a href="#" id="link" class="card-link">
+                    <div class="card">
+                        <h3 class="projtitulo"></h3>
+                        <div class="conteudo">
+                            <img src="assets/imagens/Pessoa1.jpg" alt="Imagem do projeto" class="projimagem">
+                            <div class="texto">
+                                <p class="anfitriao"></p>
+                                <p class="temas"></p>
+                                <p class="ibancarias"></p>
+                                <p class="resumo"></p>
+                            </div>
                         </div>
                     </div>
+                </a>
+                <div id="remover">
+                    <button id="btnExcluir"><i class="bi bi-x-circle" id="icons-container"></i></button>
                 </div>
             </div>
-            <div id="remover">
-                <button id="btnExcluir"><i class="bi bi-x-circle" id="icons-container"></i></button>
-            </div>
+        </template> 
+        
             
-        </template>
+            
+        
 
         <h1 id="titulo-pagina" class="fs-3 text-body-secondary fw-semibold">Projetos favoritados por você:</h1>
         <div id="view">
-            <div id="conteiner">
-            </div>
-            
         </div>
 
 

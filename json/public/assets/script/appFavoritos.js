@@ -24,19 +24,19 @@ async function preencherProjetosNoHTML() {
     const projetos = await obterProjetosDoUsuario(usuarioId);
 
     // Selecionar o elemento onde os projetos serão inseridos
-    const view1 = document.getElementById('conteiner');
+    const view1 = document.getElementById('view');
 
     // Limpar o conteúdo atual, se houver
     view1.innerHTML = '';
 
     // Para cada projeto, criar e adicionar um elemento HTML com suas informações
     projetos.forEach(projeto => {
-        const cardTemplate = document.getElementById('card');
+        const cardTemplate = document.getElementById('card_template');
         const cardClone = cardTemplate.content.cloneNode(true);
 
-        cardClone.querySelector('.card-subtitle').textContent = projeto.nome_anfitriao;
-        cardClone.querySelector('.card-title').textContent = projeto.nome_projeto;
-        cardClone.querySelector('.tema').textContent = projeto.tema;
+        cardClone.querySelector('.anfitriao').textContent = projeto.nome_anfitriao;
+        cardClone.querySelector('.projtitulo').textContent = projeto.nome_projeto;
+        cardClone.querySelector('.temas').textContent = projeto.tema;
         cardClone.querySelector('.resumo').textContent = projeto.resumo;
 
         const btnExcluir = cardClone.querySelector('#btnExcluir');
