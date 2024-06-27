@@ -42,52 +42,38 @@ async function preencherProjetosNoHTML() {
     }
 }
 
-// Função para criar um elemento de card com as informações do projeto
 function criarCard(projeto) {
-    const cardTemplate = document.getElementById('card');
+    const cardTemplate = document.getElementById('card_template');
     const cardClone = cardTemplate.content.cloneNode(true);
 
     // Preencher informações do projeto no card
-    cardClone.querySelector('.card-subtitle').textContent = projeto.nome_anfitriao;
-    cardClone.querySelector('.card-title').textContent = projeto.nome_projeto;
-    cardClone.querySelector('.tema').textContent = projeto.tema;
+    cardClone.querySelector('.anfitriao').textContent = projeto.nome_anfitriao;
+    cardClone.querySelector('.projtitulo').textContent = projeto.nome_projeto;
+    cardClone.querySelector('.temas').textContent = projeto.tema;
     cardClone.querySelector('.resumo').textContent = projeto.resumo;
 
-    // Preencher o valor do ID do projeto no span
-    cardClone.querySelector('#projeto span').textContent = projeto.id;
-
-    // Configurar checkboxes de avaliação
-    const checkboxes = cardClone.querySelectorAll('#div-avaliacao input[type="checkbox"]');
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('click', function() {
-            const divAvaliacao = checkbox.closest('#div-avaliacao').querySelector('#avaliacao');
-            const valorCheckbox = checkbox.value;
-            const estrelas = divAvaliacao.querySelectorAll(`i.estrela-${valorCheckbox}`);
-            let estrelasHtml = '';
-            estrelas.forEach(estrela => {
-                estrelasHtml += estrela.outerHTML;
-            });
-
-            // Atualizar o texto de avaliação no HTML
-            divAvaliacao.innerHTML = `Sua avaliação: ${estrelasHtml}`;
-
-            // Criar e adicionar o botão de edição
-            const botaoEditarNota = document.createElement('button');
-            botaoEditarNota.id = 'btnEditarNota';
-            botaoEditarNota.textContent = 'Editar Nota';
-            divAvaliacao.appendChild(botaoEditarNota);
-
-            // Configurar o botão de edição
-            botaoEditarNota.addEventListener('click', function() {
-                editarNota(projeto.id, valorCheckbox, divAvaliacao);
-            });
-
-            // Obter o ID do projeto a partir do objeto projeto
-            const projetoId = parseInt(projeto.id);
-
-            // Atualizar a classe notas do projeto no db.json com a nota selecionada
-            atualizarNotasNoDB(projetoId, valorCheckbox);
-        });
+     // Configurar checkboxes de avaliação
+     const checkboxes = cardClone.querySelectorAll('#div-avaliacao input[type="checkbox"]');
+     checkboxes.forEach(checkbox => {
+         checkbox.addEventListener('click', function() {
+             // Desmarcar outros checkboxes
+             checkboxes.forEach(cb => {
+                 if (cb !== checkbox) cb.checked = false;
+             });
+ 
+             const divAvaliacao = checkbox.closest('#div-avaliacao').querySelector('#avaliacao');
+             const valorCheckbox = checkbox.value;
+             const estrelas = divAvaliacao.querySelectorAll(`i.estrela-${valorCheckbox}`);
+             estrelas.forEach(estrela => {
+                 estrela.style.color = checkbox.checked ? 'yellow' : 'gray';
+             });
+ 
+             // Obter o ID do projeto
+             const idProjeto = divAvaliacao.querySelector('span').textContent;
+             
+             // Atualizar a nota do projeto
+             editarNotaProjeto(idProjeto, valorCheckbox);
+         });
     });
 
     return cardClone;
