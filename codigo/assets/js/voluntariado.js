@@ -119,7 +119,7 @@ periodoInput.forEach((input) => {
 document.addEventListener("DOMContentLoaded", function () {
   // Função para carregar e exibir os cards dos projetos
   function carregarProjetos() {
-    fetch("http://localhost:3000/volunt") // Caminho para o arquivo JSON
+    fetch("http://localhost:3001/volunt") // Caminho para o arquivo JSON
       .then((response) => response.json())
       .then((data) => {
         const projetos = data;
@@ -143,9 +143,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const cardClone = document.importNode(template.content, true);
 
     // Preencher os elementos do card com os dados do projeto
+    cardClone.querySelector(".card-link").href = `cardVolunt.html?id=${projeto.id}`
     cardClone.querySelector(".projtitulo").textContent = projeto.nome;
     cardClone.querySelector(".projimagem").src = projeto.imagem;
-    cardClone.querySelector(".anfitriao").innerHTML = `<strong>Anfitrião:</strong> ${projeto.anfitrião}`;
+    cardClone.querySelector(".anfitriao").innerHTML = `<strong>Anfitrião:</strong> ${projeto.anfitriao}`;
     cardClone.querySelector(".temas").innerHTML = `<strong>Temas:</strong> ${obterSelecionados(projeto.temas.opcoes)}`;
     cardClone.querySelector(".local").innerHTML = `<strong>Local:</strong> ${obterSelecionados(projeto.local.opcoes)}`;
     cardClone.querySelector(".dias").innerHTML = `<strong>Dias:</strong> ${obterSelecionados(projeto.dia.opcoes)}`;
