@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Doação de Itens</title>
+    <title>Formulário de Voluntariado</title>
     <link rel="stylesheet" href="assets/css/stylesForms.css"> 
 </head>
 <body>
     <div class="container">
         <div class="form-header">
-            <h1>Formulário de Doação de Itens</h1>
+            <h1>Formulário de Voluntariado</h1>
         </div>
-        <form class="form" id="doacaoForm" enctype="multipart/form-data">
+        <form class="form" id="voluntariadoForm" enctype="multipart/form-data">
             <div class="input-box">
-                <label for="nomeProjeto">Nome da Campanha:</label><br>
-                <input type="text" placeholder="Nome da Campanha" id="nomeProjeto" name="nomeProjeto"><br>
+                <label for="nomeProjeto">Nome do Projeto:</label><br>
+                <input type="text" placeholder="Nome do Projeto" id="nomeProjeto" name="nomeProjeto"><br>
             </div>
 
             <div class="input-box">
@@ -52,12 +52,12 @@
             </div>
 
             <div class="input-box">
-                <label for="localizacao">Local de Entrega (ou informe se prefere recolhimento "a domicílio"):</label><br>
-                <input type="text" placeholder="Local de Entrega" id="localizacao" name="localizacao"><br>
+                <label for="localizacao">Localização:</label><br>
+                <input type="text" placeholder="Localização" id="localizacao" name="localizacao"><br>
             </div>
 
             <div class="input-box">
-                <label for="dias">Dias Disponíveis para Entrega:</label><br>
+                <label for="dias">Dias Disponíveis:</label><br>
                 <input type="checkbox" name="dias" value="Segunda-Feira"> Segunda-Feira<br>
                 <input type="checkbox" name="dias" value="Terça-Feira"> Terça-Feira<br>
                 <input type="checkbox" name="dias" value="Quarta-Feira"> Quarta-Feira<br>
@@ -68,8 +68,8 @@
             </div>
 
             <div class="input-box">
-                <label for="horario">Horário de Entrega:</label><br>
-                <input type="text" placeholder="Horário de Entrega" id="horario" name="horario"><br>
+                <label for="horario">Horário:</label><br>
+                <input type="text" placeholder="Horário" id="horario" name="horario"><br>
             </div>
 
             <div class="input-box">
@@ -79,7 +79,7 @@
                 <input type="checkbox" name="periodo" value="Noite"> Noite<br>
             </div>
 
-            <button type="button" class="button" onclick="enviarDadosDoacao()">Enviar</button>
+            <button type="button" class="button" onclick="enviarDadosVoluntariado()">Enviar</button>
         </form>
     </div>
     <script src="assets/script/formsScript.js"></script> 
