@@ -1,0 +1,150 @@
+/*PAGINA VAGAS DE VOLUNTARIADO */
+
+main{
+    display: grid;
+    grid-template-columns: 2.5fr 7fr 2.5fr;
+    column-gap: 40px;
+    padding-top: 150px;
+}
+
+.titulo{
+    grid-row: 1;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    grid-column: 1/-1;
+}
+
+.cards{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+section .card{
+    border: 1.5px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: whitesmoke;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card .conteudo{
+    display: flex;              
+    align-items: center;   
+}
+
+#espaco{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#semCards{
+    background-color: slategray ;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    border-color: black;
+    border-radius: 10px;
+    grid-row: 2;
+    grid-column: 2;
+    width: 100%;
+    margin-top: 30px;
+    padding: 50px;
+    margin-bottom: 35px;
+}
+.texto button{
+    display: inline;
+}
+
+.conteudo p{
+    margin-left: 10px;
+}
+
+.card p{
+    font-size: small;
+    text-align: justify;
+}
+
+.projtitulo{
+    width: 95%;
+    height: fit-content;
+    padding: 5px 0px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.projimagem{
+    width: 35%;
+}
+
+.resumo{
+    margin-bottom: 0px;
+}
+
+section a{
+    text-decoration: none;
+}
+
+.legenda{
+    display: inline;
+    margin-left: 5px;
+}
+
+#btnExcluir{
+    margin: 0%;
+    padding: 0px 6px;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 2rem;
+    color: red;
+}
+
+#btnExcluir:hover{
+    transform: scale(1.10);
+}
+
+/* MOBILE */
+
+
+@media screen and (max-width: 1195px){
+
+    main{
+        display: block;
+        padding-top: 80px;
+    }
+
+    .titulo{
+        margin-bottom: 20px;
+    }
+
+    .cards{
+        margin-top: 10px;
+        z-index: 1;
+    }
+
+    #semCards{
+        margin-top: 130px;
+        margin-bottom: 130px;
+    }
+
+}
+
+@media screen and (max-width: 730px){
+
+    .card .conteudo{
+        display: block;              
+    }
+
+    .conteudo img{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}

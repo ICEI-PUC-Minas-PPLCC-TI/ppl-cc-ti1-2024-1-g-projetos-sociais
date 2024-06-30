@@ -1,0 +1,99 @@
+
+main{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 30px;
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+.texto{
+    font-size: large;
+    text-align: justify;
+    display: inline;
+    grid-column: 2;
+    grid-row: 2;
+    justify-items: center;
+}
+
+#imagem{
+    width: 100%;
+    display: inline-block;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#maisInfo{
+    grid-column: 1/-1;
+    font-size: large;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#btnFav{
+    grid-column: 1;
+    width: 20%;
+    display: block;
+    border: 2px solid darkred;
+    background-color:firebrick;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    transform: scale(1.02);
+}
+
+#map {
+    margin-top: 20px;
+    grid-column: 1/3;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#pac-input {
+    margin-top: 13px;
+    font-size: 10px;
+    width: 20%;
+    display: none;
+}        
+
+
+@media screen and (max-width: 1195px){
+
+    #btnFav{
+        margin-top: 15px;
+    }
+
+    main{
+        display: block;
+        padding-top: 80px;
+    }
+
+    .titulo{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 730px){
+
+    #btnFav{
+        width: 40%;
+    }
+    
+}
