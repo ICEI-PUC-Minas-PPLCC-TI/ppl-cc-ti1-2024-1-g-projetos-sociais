@@ -60,7 +60,7 @@ header a{
     padding-bottom: 20px;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
 }
 
 .mItem{
@@ -83,7 +83,7 @@ header a{
     width: fit-content;
     background-color: rgb(179, 177, 177);
     position: fixed;
-    z-index: 3;
+    z-index: 11;
     top: 65px;
     right: 100px;
     padding: 0px;
@@ -184,7 +184,7 @@ header a{
     display: none;
 }
 
-@media screen and (max-width: 1195px){
+@media screen and (max-width: 1023px){
 
     #logoMobile{
         display: flex;
@@ -223,7 +223,7 @@ header a{
         top: 0px;
         width: 100%;
         background-color: lightgray;
-        z-index: 1; 
+        z-index: 9; 
     }
 
     header nav #secoesMenu{
@@ -243,7 +243,7 @@ header a{
         height: 100%;
         overflow: hidden;
         background-color: rgba(0,0,0,0.7);
-        z-index: 1000;
+        z-index: 12;
     }
 
     .menu li{

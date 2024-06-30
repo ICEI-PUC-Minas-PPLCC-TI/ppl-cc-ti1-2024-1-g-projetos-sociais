@@ -4,8 +4,6 @@ console.log(id);
 
 usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
 
-document.addEventListener('DOMContentLoaded', verificarUsuarioLogado);
-
 async function verificarUsuarioLogado() {
     if (usuarioLogado) {
         const idUsuario = usuarioLogado.id;

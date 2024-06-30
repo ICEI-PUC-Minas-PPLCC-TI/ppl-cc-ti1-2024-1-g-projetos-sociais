@@ -103,7 +103,7 @@ section a{
     display: none;
 }
 
-@media screen and (max-width: 1195px){
+@media screen and (max-width: 1023px){
 
     main{
         display: block;
@@ -217,6 +217,14 @@ section a{
 
     #filters{
         width: 63%;
+    }
+
+}
+
+@media screen and (max-width: 380px){
+
+    #filters{
+        font-size: xx-small;
     }
 
 }

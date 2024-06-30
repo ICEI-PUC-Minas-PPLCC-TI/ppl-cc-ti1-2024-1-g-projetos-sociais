@@ -193,6 +193,21 @@ document.addEventListener("DOMContentLoaded", function () {
     return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
 
+  var menuTuggle = document.getElementById("menuTuggle");
+  var filtroTuggle = document.getElementById("filtroTuggle");
+
+  menuTuggle.addEventListener("change", function() {
+      if (menuTuggle.checked) {
+          filtroTuggle.checked = false;
+      }
+    });
+
+  filtroTuggle.addEventListener("change", function() {
+      if (filtroTuggle.checked) {
+          menuTuggle.checked = false;
+      }
+  });
+
   // Adicionar um listener para o evento de input no campo de busca
   document.getElementById("search").addEventListener("input", buscarProjetos);
 
