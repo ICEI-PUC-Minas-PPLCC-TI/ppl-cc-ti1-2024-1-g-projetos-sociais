@@ -15,4 +15,30 @@ A dor que buscamos resolver é a desconexão entre voluntários e projetos socia
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+A primeira versão do sistema está disponível! A aplicação é totalmente online, não requer nenhuma instalação ou configuração. Basta acessar o link: https://csbh.site. Qualquer dúvida na utilização do site.
+Possíveis Dúvidas sobre a utilização do site: 
+
+Como achar projetos que se alinham com minhas disponibilidades?
+
+Clique nos botões do menu de "Vagas de voluntariado", "Doação de Material" ou "Contribuição Financeira" (dependendo do tipo de projeto procurado) e utilize a barra de busca e os filtros para selecionar apenas os projetos que se encaixam em suas disponibilidades.
+
+Como visualizar meus projetos favoritos?
+
+Para visualizar seus favoritos, primeiramente você deve fazer login em sua conta (ou se cadastrar, caso não tenha uma), depois clicar no ícone do seu perfil no menu principal, o que fará com que um submenu apareça e, nele, você deve clicar no botão "Favoritos".
+
+Como visualizar os projetos que publiquei como Anfitrião?
+
+Para visualizar os projetos que você publicou, primeiramente você deve fazer login em sua conta (ou se cadastrar, caso não tenha uma), depois clicar no ícone do seu perfil no menu principal, o que fará com que um submenu apareça e, nele, você deve clicar no botão "Meus Projetos".
+
+Como realizar uma contribuição financeira?
+
+Para fazer uma doação de dinheiro, você deve clicar no botão do menu de "Contribuição Financeira", depois nessa tela você deve clicar no card do projeto para o qual deseja contribuir. Na página específica do projeto terão as informações bancárias do anfitrião. Não é possível fazer a transação financeira diretamente do nosso site, portanto você deve usar as informações fornecidas para fazer a transação por conta própria."
+
+Como entrar em contato com o anfitrião?
+
+Não é possível entrar em contato com o anfitrião diretamente pelo site. No entanto, ao clicar no card de um projeto de seu interesse, as informações de contato do anfitrião estarão disponíveis para que você possa entrar em contato."
+
+Como voltar para a página inicial?
+
+Para voltar à tela inicial, clique na logo localizada no centro do menu.
+
