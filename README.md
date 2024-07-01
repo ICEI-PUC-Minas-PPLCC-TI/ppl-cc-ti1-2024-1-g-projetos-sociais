@@ -15,7 +15,8 @@ A dor que buscamos resolver é a desconexão entre voluntários e projetos socia
 
 ## Instruções de utilização
 
-A primeira versão do sistema está disponível! A aplicação é totalmente online, não requer nenhuma instalação ou configuração. Basta acessar o link: https://csbh.site. Qualquer dúvida na utilização do site.
+A primeira versão do sistema está disponível! A aplicação é totalmente online, não requer nenhuma instalação ou configuração. Basta acessar o link: https://csbh.site. 
+
 Possíveis Dúvidas sobre a utilização do site: 
 
 Como achar projetos que se alinham com minhas disponibilidades?
